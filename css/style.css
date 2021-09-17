@@ -378,7 +378,7 @@ img {
   padding-bottom: 40px;
 }
 
-.navbar__menu-button {
+.navbar-top__menu-button {
   display: none;
 }
 
@@ -501,7 +501,6 @@ img {
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
   .navbar-menu__list {
     padding-top: 22px;
@@ -513,6 +512,9 @@ img {
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
+  }
+  .search__input {
+    width: 340px;
   }
 }
 
@@ -526,6 +528,7 @@ img {
   .menu-button {
     width: 16px;
     height: 11px;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
