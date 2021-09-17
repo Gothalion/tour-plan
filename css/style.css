@@ -501,6 +501,7 @@ img {
   }
   .navbar__search {
     margin-left: auto;
+    margin-right: 73px;
   }
   .navbar-menu__list {
     padding-top: 22px;
@@ -518,9 +519,9 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
-    max-width: 576px;
+    max-width: 520px;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
@@ -578,6 +579,10 @@ img {
 @media (max-width: 330px) {
   .container {
     max-width: 280px;
+  }
+  .navbar-top {
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
 }
 /*# sourceMappingURL=style.css.map */
