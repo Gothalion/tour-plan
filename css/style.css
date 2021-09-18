@@ -442,7 +442,7 @@ img {
   color: #333333;
 }
 
-.search__input:active {
+.search__input {
   outline: none;
 }
 
