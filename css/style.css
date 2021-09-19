@@ -571,6 +571,10 @@ img {
   margin-bottom: 4px;
 }
 
+.stars__item {
+  margin-right: 2px;
+}
+
 .offer {
   padding: 4px 9px;
   font-weight: 600;
@@ -748,6 +752,9 @@ img {
   .navbar-top {
     padding-top: 28px;
     padding-bottom: 28px;
+  }
+  .hotel-info__stars {
+    margin-right: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
