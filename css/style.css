@@ -440,11 +440,23 @@ img {
   border: none;
   font-size: 12px;
   line-height: 15px;
+  outline: none;
+}
+
+.search__input::-webkit-input-placeholder {
   color: #333333;
 }
 
-.search__input {
-  outline: none;
+.search__input:-ms-input-placeholder {
+  color: #333333;
+}
+
+.search__input::-ms-input-placeholder {
+  color: #333333;
+}
+
+.search__input::placeholder {
+  color: #333333;
 }
 
 .search__button {
