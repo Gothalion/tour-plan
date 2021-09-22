@@ -861,6 +861,14 @@ img {
   .container {
     max-width: 960px;
   }
+  .slider {
+    width: 590px;
+  }
+  .image-slider__item {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 @media (max-width: 992px) {
