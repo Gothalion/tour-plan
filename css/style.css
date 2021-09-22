@@ -851,6 +851,9 @@ img {
 .map {
   width: 347px;
   height: 213px;
+}
+
+.map__item {
   border-radius: 10px;
 }
 
