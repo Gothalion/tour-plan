@@ -107,13 +107,26 @@
         order: -1
         margin-left: 0
         margin-bottom: 10px
+  .image
+    &-slider
+      &__slide
+        height: 280px
 @media( max-width: 480px )
   .container
     max-width: 390px
+  .image
+    &-slider
+      &__slide
+        height: 240px
 @media( max-width: 400px )
   .container
     max-width: 300px
     width: 90%
+  
+  .image
+    &-slider
+      &__slide
+        height: 180px
 @media( max-width: 330px )
   .container
     max-width: 280px
@@ -125,4 +138,8 @@
     &-info
       &__stars
         margin-right: 10px
+    &__slide
+      margin-bottom: 20px
+    &-block
+      height: 280px
   

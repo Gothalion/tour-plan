@@ -1020,11 +1020,17 @@ img {
     margin-left: 0;
     margin-bottom: 10px;
   }
+  .image-slider__slide {
+    height: 280px;
+  }
 }
 
 @media (max-width: 480px) {
   .container {
     max-width: 390px;
+  }
+  .image-slider__slide {
+    height: 240px;
   }
 }
 
@@ -1032,6 +1038,9 @@ img {
   .container {
     max-width: 300px;
     width: 90%;
+  }
+  .image-slider__slide {
+    height: 180px;
   }
 }
 
@@ -1045,6 +1054,12 @@ img {
   }
   .hotel-info__stars {
     margin-right: 10px;
+  }
+  .hotel__slide {
+    margin-bottom: 20px;
+  }
+  .hotel-block {
+    height: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */
