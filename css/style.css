@@ -959,6 +959,22 @@ img {
     height: 1px;
     background-color: #333333;
   }
+  .image-slider__slide {
+    height: 350px;
+  }
+  .hotel-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 450px;
+  }
+  .booking {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
