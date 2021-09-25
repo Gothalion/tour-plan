@@ -922,7 +922,7 @@ img {
 
 .subscribe {
   position: relative;
-  width: 350px;
+  min-width: 350px;
   height: 55px;
   border-radius: 4px;
   overflow: hidden;
@@ -946,6 +946,7 @@ img {
   position: absolute;
   right: 0;
   top: 0;
+  padding: 20px 18px;
   height: 100%;
   min-width: 65px;
   border: none;
