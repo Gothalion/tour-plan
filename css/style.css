@@ -987,7 +987,7 @@ img {
           align-items: center;
   background-color: #fff;
   border-radius: 8px;
-  width: 730px;
+  maw-width: 730px;
   margin: 45px auto 0;
   padding: 0 60px 30px 64px;
 }
@@ -1113,8 +1113,8 @@ img {
   .container {
     max-width: 960px;
   }
-  .slider {
-    width: 590px;
+  .hotel-slider {
+    width: 580px;
   }
   .image-slider__item {
     height: 100%;
@@ -1168,7 +1168,7 @@ img {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .slider {
+  .hotel-slider {
     width: 100%;
   }
   .booking {
@@ -1176,6 +1176,9 @@ img {
   }
   .map {
     width: 340px;
+  }
+  .reviews-slider__item {
+    max-width: 579px;
   }
 }
 
@@ -1317,6 +1320,18 @@ img {
   .newsletter__subscribe {
     width: 100%;
   }
+  .hotel-slider__button--prev {
+    left: 6px;
+    max-width: 12px;
+    max-height: 12px;
+    background-size: 6px;
+  }
+  .hotel-slider__button--next {
+    right: 6px;
+    max-width: 12px;
+    max-height: 12px;
+    background-size: 6px;
+  }
 }
 
 @media (max-width: 330px) {
@@ -1341,18 +1356,6 @@ img {
   }
   .hotel__slider {
     margin-bottom: 20px;
-  }
-  .slider-button--prev {
-    left: 6px;
-    max-width: 12px;
-    max-height: 12px;
-    background-size: 6px;
-  }
-  .slider-button--next {
-    right: 6px;
-    max-width: 12px;
-    max-height: 12px;
-    background-size: 6px;
   }
   .newsletter {
     padding: 76px 0 83px 0;
