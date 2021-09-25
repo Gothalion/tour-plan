@@ -91,6 +91,12 @@
       flex-direction: column
       max-width: 520px
       align-items: flex-start
+  .reviews
+    &-slider
+      &__item
+        max-width: 430px
+      &__button
+        top: 40%
 @media( max-width: 576px )
   .container
     max-width: 400px
@@ -125,6 +131,23 @@
   .newsletter
     &-wrapper
       max-width: 400px
+  .reviews
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &::after, 
+        &::before
+          display: none
+      &__button
+        top: 30px
+        &--prev
+          left: 50%
+          transform: translate(-50%, 0)
+          margin-left: -120px
+        &--next
+          right: 50%
+          transform: translate(50%, 0)
+          margin-right: -120px
 @media( max-width: 480px )
   .container
     max-width: 390px
@@ -161,6 +184,23 @@
           max-width: 12px
           max-height: 12px
           background-size: 6px
+  .reviews
+    &-title
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 23px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 42px
+    &-slider
+      &__item
+        max-width: 281px
+      &__button
+        &--prev
+          margin-left: -95px
+        &--next
+          margin-right: -95px
 @media( max-width: 330px )
   .container
     max-width: 280px
