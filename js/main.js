@@ -26,7 +26,6 @@ const reviewsSlider = new Swiper(".reviews-slider", {
   allowSlideNext: true,
   allowSlidePrev: true,
   allowTouchMove: true,
-  // Keyboard arrow control
   // Navigation arrows
   navigation: {
     nextEl: ".reviews-slider__button--next",
