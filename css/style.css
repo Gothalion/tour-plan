@@ -953,9 +953,9 @@ img {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 20px 18px;
   height: 100%;
   min-width: 65px;
+  max-width: 95px;
   border: none;
   background-color: #EC1F46;
   color: #fff;
