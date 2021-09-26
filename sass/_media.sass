@@ -53,6 +53,12 @@
   .map
     width: 340px
   .reviews
+    &-title
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 38px;
+      margin-bottom: 50px
     &-slider
       &__item
         max-width: 579px
@@ -105,12 +111,18 @@
       flex-direction: column
       max-width: 520px
       align-items: flex-start
+    &-text
+      margin-bottom: 5px
+    &-title
+      &__strong
+        margin-bottom: 37px
   .reviews
-    &-slider
-      &__item
-        max-width: 430px
-      &__button
-        top: 40%
+    &-title
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 38px;
+
   .card
     width: 48%
     height: 255px
@@ -270,13 +282,18 @@
       font-weight: 300
       font-size: 20px
       line-height: 25px
-      margin: 0 0 37px 0
+      margin-bottom: 0
+      margin-right: 0
       &__strong
         font-weight: 600;
         font-size: 30px;
         line-height: 38px;
-        margin-bottom: 37px
       &-text
         margin-bottom: 5px
+  .reviews
+    &-title
+      max-width: 245px
+      margin-left: auto
+      margin-right: auto
   .activities
     padding-top: 90px
