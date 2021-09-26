@@ -865,6 +865,7 @@ img {
 .newsletter {
   position: relative;
   padding: 97px 0 87px 0;
+  background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -938,6 +939,13 @@ img {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+}
+
+.subscribe__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.subscribe__input::-moz-placeholder {
   color: #BDBDBD;
 }
 
@@ -988,7 +996,8 @@ img {
           align-items: center;
   background-color: #fff;
   border-radius: 8px;
-  maw-width: 730px;
+  max-width: 730px;
+  max-height: 350px;
   margin: 45px auto 0;
   padding: 0 60px 30px 64px;
 }
@@ -1018,7 +1027,7 @@ img {
 .reviews-slider__button {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 38%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -1033,12 +1042,12 @@ img {
 
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
-  left: 0;
+  left: 20px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
-  right: 0;
+  right: 20px;
 }
 
 .reviews-slider__profile {
@@ -1108,6 +1117,7 @@ img {
   text-align: justify;
   margin: auto;
   z-index: 99;
+  overflow-y: auto;
 }
 
 @media (max-width: 1200px) {
@@ -1332,6 +1342,9 @@ img {
   .newsletter-wrapper {
     max-width: 390px;
   }
+  .newsletter-title {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1378,6 +1391,12 @@ img {
   .reviews-slider__button--next {
     margin-right: -95px;
   }
+  .newsletter-title {
+    margin-bottom: 37px;
+  }
+  .subscribe {
+    min-width: auto;
+  }
 }
 
 @media (max-width: 330px) {
@@ -1406,12 +1425,15 @@ img {
   .newsletter {
     padding: 76px 0 83px 0;
   }
+  .newsletter-wrapper {
+    max-width: 280px;
+  }
   .newsletter__title {
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 25px;
-    margin: 0;
+    margin: 0 0 37px 0;
   }
   .newsletter__title__strong {
     font-weight: 600;
