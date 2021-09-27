@@ -1199,19 +1199,19 @@ img {
   max-width: 200px;
 }
 
-.card__title:nth-child(1) {
+.card__title--1 {
   max-width: 145px;
 }
 
-.card__title:nth-child(2) {
+.card__title--2 {
   max-width: 161px;
 }
 
-.card__title:nth-child(3) {
+.card__title--3 {
   max-width: 153px;
 }
 
-.card__title:nth-child(4) {
+.card__title--4 {
   max-width: 200px;
 }
 
