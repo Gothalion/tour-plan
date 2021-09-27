@@ -1392,7 +1392,7 @@ img {
   .newsletter-text {
     margin-bottom: 5px;
   }
-  .newsletter-title__strong {
+  .newsletter__title {
     margin-bottom: 37px;
   }
   .reviews-title {
@@ -1601,8 +1601,6 @@ img {
     font-weight: 300;
     font-size: 20px;
     line-height: 25px;
-    margin-bottom: 0;
-    margin-right: 0;
   }
   .newsletter__title__strong {
     font-weight: 600;
@@ -1616,6 +1614,9 @@ img {
     max-width: 245px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .reviews-slider__text {
+    text-align: left;
   }
   .activities {
     padding-top: 90px;
