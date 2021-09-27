@@ -1575,6 +1575,9 @@ img {
     padding-top: 28px;
     padding-bottom: 28px;
   }
+  .hotel {
+    padding-bottom: 20px;
+  }
   .hotel-info__stars {
     margin-right: 10px;
   }
@@ -1583,12 +1586,21 @@ img {
   }
   .hotel-block {
     height: 280px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .hotel-grid {
     padding-top: 18px;
   }
   .hotel__slider {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+  }
+  .map {
+    height: 173px;
+  }
+  .map__item {
+    height: 173px;
   }
   .newsletter {
     padding: 76px 0 83px 0;
