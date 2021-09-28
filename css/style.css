@@ -1199,22 +1199,6 @@ img {
   max-width: 200px;
 }
 
-.card__title--1 {
-  max-width: 145px;
-}
-
-.card__title--2 {
-  max-width: 161px;
-}
-
-.card__title--3 {
-  max-width: 153px;
-}
-
-.card__title--4 {
-  max-width: 200px;
-}
-
 .card__button {
   padding: 7px 22px 7px 21px;
   border: none;
@@ -1313,6 +1297,16 @@ img {
   }
   .reviews-slider__item {
     max-width: 579px;
+    max-height: 299px;
+  }
+  .reviews-slider__button {
+    top: 52.5%;
+  }
+  .reviews-slider__button--prev {
+    left: 0;
+  }
+  .reviews-slider__button--next {
+    right: 0;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
