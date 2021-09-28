@@ -969,6 +969,7 @@ img {
 
 .reviews {
   padding-top: 40px;
+  padding-bottom: 74px;
 }
 
 .reviews-title {
@@ -1288,6 +1289,9 @@ img {
   .map {
     width: 340px;
   }
+  .reviews {
+    padding-bottom: 60px;
+  }
   .reviews-title {
     font-style: normal;
     font-weight: bold;
@@ -1450,6 +1454,9 @@ img {
   .newsletter-wrapper {
     max-width: 400px;
   }
+  .reviews {
+    padding-bottom: 50px;
+  }
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
@@ -1470,6 +1477,9 @@ img {
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
     margin-right: -120px;
+  }
+  .activities {
+    padding-top: 40px;
   }
   .activities-title {
     font-style: normal;
