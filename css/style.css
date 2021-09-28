@@ -1579,7 +1579,7 @@ img {
     margin-bottom: 20px;
   }
   .hotel-block {
-    height: 280px;
+    min-height: 445px;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -1602,18 +1602,18 @@ img {
   .newsletter-wrapper {
     max-width: 280px;
   }
-  .newsletter__title {
+  .newsletter-title {
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 25px;
   }
-  .newsletter__title__strong {
+  .newsletter-title__strong {
     font-weight: 600;
     font-size: 30px;
     line-height: 38px;
   }
-  .newsletter__title-text {
+  .newsletter-title-text {
     margin-bottom: 5px;
   }
   .reviews-title {
