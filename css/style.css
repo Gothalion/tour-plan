@@ -1654,12 +1654,14 @@ img {
   }
   .footer__aditional {
     grid-column: span 3;
+    margin-left: 12px;
   }
   .footer__legal {
     -ms-grid-column: 6;
     -ms-grid-column-span: 2;
     grid-column: 6 / 8;
     margin: 0;
+    margin-left: 30px;
   }
   .footer__contact-details {
     -ms-grid-row: 3;
@@ -1893,6 +1895,7 @@ img {
     grid-row: 3;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-left: 0;
   }
   .footer__categories {
     -ms-grid-row: 4;
@@ -1905,6 +1908,7 @@ img {
     grid-row: 5;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-left: 0;
   }
   .footer__contact-details {
     -ms-grid-row: 6;
@@ -2168,7 +2172,7 @@ img {
     height: 255px;
   }
   .card:nth-child(n+2) {
-    margin-bottom: 20px;
+    margin-bottom: 28px;
   }
   .card:last-child {
     margin-bottom: 0;
@@ -2212,6 +2216,10 @@ img {
   .navbar-menu__item--mobile {
     margin-bottom: 39px;
     width: 245px;
+  }
+  .breadcrumb-list {
+    padding-top: 12px;
+    padding-bottom: 18px;
   }
   .hotel {
     padding-bottom: 20px;
@@ -2287,6 +2295,9 @@ img {
   .reviews-slider__button--prev {
     margin-left: -88px;
   }
+  .activities {
+    padding-bottom: 50px;
+  }
   .activities__card:nth-child(1) {
     -webkit-box-ordinal-group: -2;
         -ms-flex-order: -3;
@@ -2304,7 +2315,7 @@ img {
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   .footer__social-network {
     -ms-grid-row: 2;
@@ -2346,6 +2357,9 @@ img {
   }
   .footer__message {
     margin-bottom: 15px;
+  }
+  .footer__icon-wrapper {
+    min-width: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
