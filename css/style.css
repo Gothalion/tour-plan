@@ -1489,6 +1489,26 @@ img {
   margin-left: 126px;
 }
 
+.thanks-wrapper {
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.thanks__title {
+  margin-bottom: 20px;
+}
+
+.thanks__form {
+  padding: 18 0 20 0;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #EC1F46;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
