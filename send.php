@@ -32,7 +32,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'mbarsukovv@gmail.com'; // Логин на почте
-    $mail->Password   = '11Eb4ztfvv'; // Пароль на почте
+    $mail->Password   = 'ecmfmidhygblsouk'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('mbarsukovv@gmail.com', 'Максим Барсуков'); // Адрес самой почты и имя отправителя
@@ -68,4 +68,5 @@ else {$result = "error";}
 }
 
 // Отображение результата
+//echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
 header('Location: thanks.html');
