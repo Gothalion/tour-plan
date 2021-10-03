@@ -31,14 +31,14 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'mbarsukovv@gmail.com'; // Логин на почте
-    $mail->Password   = '11Eb4ztfvv'; // Пароль на почте
+    $mail->Username   = ''; // Логин на почте
+    $mail->Password   = ''; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('mbarsukovv@gmail.com', 'Максим Барсуков'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('', ''); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('bloodmistzzz@gmail.com');  
+    $mail->addAddress('');  
 
     // Прикрипление файлов к письму
 if (!empty($file['name'][0])) {
