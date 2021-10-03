@@ -1746,7 +1746,7 @@ img {
   .container {
     max-width: 520px;
   }
-  .navbar__mobile--fixed {
+  .navbar--mobile--fixed {
     position: fixed;
     left: 0;
     top: 0;
