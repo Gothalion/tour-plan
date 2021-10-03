@@ -1499,8 +1499,12 @@ img {
   margin-bottom: 20px;
 }
 
-.thanks__form {
-  padding: 18 0 20 0;
+.thanks__text {
+  margin-bottom: 40px;
+}
+
+.button__thanks {
+  padding: 18px 10px 20px 10px;
   margin-bottom: 20px;
   border-radius: 4px;
   border: none;
