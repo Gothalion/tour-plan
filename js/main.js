@@ -43,6 +43,12 @@ $(document).ready(function () {
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
+  closeModalButton.on("keyCode == 27", closeModal);
+  $(document).keydown(function (e) {
+    if (e.key == "Escape") {
+      closeModal(event);
+    }
+  });
 
   function openModal() {
     var modalOverlay = $(".modal__overlay");
