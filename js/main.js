@@ -63,4 +63,28 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+  // Валидация
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Please enter at least 2 characters.",
+        },
+        email: {
+          required: "Please specify your email",
+          email: "Email address format: yourname@yourmail.com",
+        },
+        phone: {
+          required: "Please specify your phone number",
+          phone: "Phone number format: +7-(999)-999-99-99",
+          minlength: "Please enter at least 11 characters.",
+        },
+      },
+    });
+  });
+
+  // Phone mask
+  $(".phone-mask").mask("+7(999) 999-99-9999");
 });

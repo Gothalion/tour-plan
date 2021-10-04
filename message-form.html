@@ -200,10 +200,12 @@
     <section class="thanks">
       <div class="container">
         <div class="thanks-wrapper">
-          <h1 class="thanks__title">Сообщение отправлено</h1>
-          <p class="thanks__text">Наш менеджер перезвонит вам через 5 минут.</p>
+          <h1 class="thanks__title">
+            Your message has been successfully sent. We will contact you very
+            soon!
+          </h1>
           <form action="index.html" class="thanks__form">
-            <button class="button button__thanks">Вернутся на главную</button>
+            <button class="button button__thanks">Back to main page</button>
           </form>
         </div>
         <!-- /.thanks-wrapper -->
@@ -428,19 +430,28 @@
                 class="footer__input"
                 placeholder="Your Full Name*"
                 name="name"
+                required
               />
               <input
-                type="text"
+                type="tel"
                 class="footer__input"
                 placeholder="Phone Number*"
                 name="phone"
+                required
               />
               <textarea
                 class="footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
-              <button class="button footer__button" type="submit">Send</button>
+              <button
+                class="button footer__button"
+                type="submit"
+                name="form"
+                value="message-form"
+              >
+                Send
+              </button>
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>
