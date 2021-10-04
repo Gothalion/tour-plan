@@ -18,6 +18,7 @@
     top: 50%
     left: 50%
     max-width: 478px
+    max-height: 100vh
     padding: 33px 88px
     background-color: $dark
     transform: translate(-50%, -50%)
@@ -30,6 +31,7 @@
     &--visible
       visibility: visible
       opacity: 1
+      overflow-y: auto
   &__close
     position: absolute
     right: 18px
@@ -37,6 +39,7 @@
     text-decoration: none
     cursor: pointer
   &__title
+    margin: 0
     text-align: center
     text-transform: uppercase
     font-family: Mulish;
@@ -67,6 +70,7 @@
     margin-top: 15px
     width: 100%
   &__message
+    margin-bottom: 15px
     background-color: #fff
     border-radius: 4px
     padding: 18px 23px
@@ -84,7 +88,6 @@
     color: #E0E0E0
   &__button
     padding: 18px 0
-    margin-top: 15px
     min-width: 160px
     min-height: 50px
     background-color: $primary
@@ -97,3 +100,5 @@
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
+  &-active
+    overflow: hidden

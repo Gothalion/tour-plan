@@ -1558,6 +1558,7 @@ label.invalid {
   top: 50%;
   left: 50%;
   max-width: 478px;
+  max-height: 100vh;
   padding: 33px 88px;
   background-color: #0A223D;
   -webkit-transform: translate(-50%, -50%);
@@ -1574,6 +1575,7 @@ label.invalid {
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+  overflow-y: auto;
 }
 
 .modal__close {
@@ -1585,6 +1587,7 @@ label.invalid {
 }
 
 .modal__title {
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
   font-family: Mulish;
@@ -1632,6 +1635,7 @@ label.invalid {
 }
 
 .modal__message {
+  margin-bottom: 15px;
   background-color: #fff;
   border-radius: 4px;
   padding: 18px 23px;
@@ -1654,7 +1658,6 @@ label.invalid {
 
 .modal__button {
   padding: 18px 0;
-  margin-top: 15px;
   min-width: 160px;
   min-height: 50px;
   background-color: #EC1F46;
@@ -1667,6 +1670,10 @@ label.invalid {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+}
+
+.modal-active {
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
@@ -1874,7 +1881,7 @@ label.invalid {
     width: 136px;
   }
   .modal__dialog {
-    padding: 33px 66px;
+    padding: 30px 60px;
   }
 }
 
@@ -1897,7 +1904,7 @@ label.invalid {
     max-width: 540px;
   }
   .modal__dialog {
-    padding: 33px 44px;
+    padding: 25px 40px;
   }
 }
 
@@ -2127,16 +2134,8 @@ label.invalid {
 
 @media (max-width: 730px) {
   .modal__dialog {
-    padding: 33px 33px;
-  }
-}
-
-@media (max-width: 730px) {
-  .modal__dialog {
-    padding: 33px 33px;
-  }
-  .modal__button {
-    margin-bottom: 15px;
+    padding: 25px 25px;
+    width: 400px;
   }
 }
 
@@ -2305,6 +2304,7 @@ label.invalid {
     grid-column: 1;
   }
   .modal__dialog {
+    width: 350px;
     padding: 15px 30px;
   }
 }
@@ -2406,6 +2406,21 @@ label.invalid {
   }
   .footer__bottom-list > li:last-child {
     margin: 0;
+  }
+  .modal__dialog {
+    width: 300px;
+  }
+  .modal__button {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
+  .modal__info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 15px;
   }
 }
 
@@ -2567,6 +2582,9 @@ label.invalid {
   }
   .footer__icon-wrapper {
     min-width: 30px;
+  }
+  .modal__dialog {
+    padding: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

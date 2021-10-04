@@ -140,7 +140,7 @@
       width: 136px
   .modal
     &__dialog
-      padding: 33px 66px
+      padding: 30px 60px
 @media ( max-width: 800px )
   .container, 
   .newsletter-wrapper
@@ -157,7 +157,7 @@
       max-width: 540px
   .modal
     &__dialog
-      padding: 33px 44px
+      padding: 25px 40px
 @media ( max-width: 767px )
   body
     padding-top: 78px
@@ -310,13 +310,8 @@
 @media ( max-width: 730px )
   .modal
     &__dialog
-      padding: 33px 33px
-@media ( max-width: 730px )
-  .modal
-    &__dialog
-      padding: 33px 33px
-    &__button
-      margin-bottom: 15px
+      padding: 25px 25px
+      width: 400px
 @media( max-width: 576px )
   .container
     max-width: 400px
@@ -427,6 +422,7 @@
       grid-column: 1
   .modal
     &__dialog
+      width: 350px
       padding: 15px 30px
 @media( max-width: 480px )
   .container
@@ -510,6 +506,15 @@
           margin-right: 10px
           &:last-child
             margin: 0
+  .modal
+    &__dialog
+      width: 300px
+    &__button
+      order: 2
+      width: 100%
+    &__info
+      order: 1
+      margin-bottom: 15px
 @media( max-width: 330px )
   .container
     max-width: 280px
@@ -623,4 +628,8 @@
     &__icon
       &-wrapper
         min-width: 30px
+  .modal
+    &__dialog
+      padding: 10px
+    
     
