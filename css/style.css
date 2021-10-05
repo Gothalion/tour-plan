@@ -1324,7 +1324,7 @@ label.invalid {
       flex-wrap: wrap;
 }
 
-.footer-form__bottom {
+.footer-form--bottom {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1517,7 +1517,7 @@ label.invalid {
 }
 
 .thanks__title {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .thanks__text {

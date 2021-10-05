@@ -9,6 +9,7 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];
+$form = $_POST['form'];
 
 // Формирование самого письма
 if ($form == 'message-form') {
@@ -46,7 +47,7 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    //$mail->SMTPDebug = 2;
+    // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
@@ -60,23 +61,10 @@ try {
     // Получатель письма
     $mail->addAddress('bloodmistzzz@gmail.com');  
 
-    // Прикрипление файлов к письму
-if (!empty($file['name'][0])) {
-    for ($ct = 0; $ct < count($file['tmp_name']); $ct++) {
-        $uploadfile = tempnam(sys_get_temp_dir(), sha1($file['name'][$ct]));
-        $filename = $file['name'][$ct];
-        if (move_uploaded_file($file['tmp_name'][$ct], $uploadfile)) {
-            $mail->addAttachment($uploadfile, $filename);
-            $rfile[] = "Файл $filename прикреплён";
-        } else {
-            $rfile[] = "Не удалось прикрепить файл $filename";
-        }
-    }   
-}
-// Отправка сообщения
-$mail->isHTML(true);
-$mail->Subject = $title;
-$mail->Body = $body;    
+    // Отправка сообщения
+    $mail->isHTML(true);
+    $mail->Subject = $title;
+    $mail->Body = $body;    
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
@@ -88,7 +76,6 @@ else {$result = "error";}
 }
 
 // Отображение результата
-//echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
 if ($form == 'message-form' || $form == 'message-form-modal') {
   header('Location: message-form.html');
 };
@@ -96,3 +83,5 @@ if ($form == 'message-form' || $form == 'message-form-modal') {
 if ($form == 'message-subscribe') {
   header('Location: message-subscribe.html');
 };
+
+// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
