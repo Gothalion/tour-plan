@@ -361,6 +361,10 @@ img {
   margin: auto;
 }
 
+input, textarea, button {
+  outline: none;
+}
+
 label.invalid {
   margin-top: 3px;
   font-size: 12px;
