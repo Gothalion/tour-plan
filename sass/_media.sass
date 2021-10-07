@@ -145,12 +145,27 @@
   .container, 
   .newsletter-wrapper
     max-width: 700px
-  .footer
+  .booking
+    padding: 29px 22px 26px 23px
+  .newsletter
+    min-height: 260px
+  .reviews
+    &-slider
+      &__item
+        &::after,
+        &::before
+          display: none
     &__logo
       height: 115px
       width: 100px
+    &__social
+      &-links
+        margin-top: 10px
     &__title
       margin-top: 10px
+      &-contact
+        margin-top: 15px
+        margin-bottom: 25px
       &-message
         margin-top: 0
     &__form
@@ -187,7 +202,7 @@
       left: 0
       right: 0
       bottom: 0
-      top: 78px
+      top: 70px
       padding-top: 30px
       &__visible
         display: block
@@ -566,6 +581,9 @@
         line-height: 38px;
       &-text
         margin-bottom: 5px
+  .subscribe
+    &__input
+      padding-left: 20px
   .reviews
     padding-top: 40px
     padding-bottom: 0
@@ -604,6 +622,8 @@
         display: flex
         flex-wrap: wrap
         margin-bottom: 30px
+      &-links
+        margin-top: 0
     &__legal
       margin-bottom: 30px
     &__aditional
@@ -620,7 +640,7 @@
         margin-right: 0
         margin-bottom: 20px
       &-contact
-        margin-bottom: 30px
+        margin-bottom: 25px
       &-message
         margin-bottom: 15px
     &__message
@@ -628,6 +648,11 @@
     &__icon
       &-wrapper
         min-width: 30px
+    &__form
+      &__bottom
+        flex-wrap: wrap
+    &__payment
+      margin-bottom: 10px
   .modal
     &__dialog
       padding: 10px

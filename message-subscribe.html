@@ -4,48 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/android-icon-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -53,15 +13,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Best Tour Plan - Thanks page</title>
+    <title>Best Tour Plan - Hotel Booking</title>
   </head>
 
   <body>
-    <header class="navbar navbar__mobile--fixed">
+    <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="logo">
+          <a href="#" class="logo">
             <img
               src="img/horizonal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -217,7 +178,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="index.html" class="logo footer__logo">
+          <a href="#" class="logo footer__logo">
             <img
               src="img/logo-vertical.svg"
               alt="Vertical-logo: Best Tour Plan"
@@ -424,33 +385,44 @@
             <h3 class="footer__title footer__title-message">
               Send us a message
             </h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="tel"
-                class="footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  minlength="2"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="footer__input phone-mask"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  minlength="17"
+                  maxlength="17"
+                  required
+                />
+              </div>
               <textarea
                 class="footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
-              <button
-                class="button footer__button"
-                type="submit"
-                name="form"
-                value="message-form"
-              >
-                Send
-              </button>
-              <span class="footer__info">* Required Fields</span>
+              <div class="footer__form__bottom">
+                <button
+                  class="button footer__button"
+                  type="submit"
+                  name="form"
+                  value="message-form"
+                >
+                  Send
+                </button>
+                <span class="footer__info">* Required Fields</span>
+              </div>
             </form>
           </div>
           <!-- /.footer__contacts-form -->
@@ -482,9 +454,68 @@
       <!-- /.container -->
     </footer>
 
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" id="modal__close" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+        <div class="modal__contact-form">
+          <h3 class="modal__title modal__title-message">Booking</h3>
+          <form action="send.php" method="POST" class="modal__form form">
+            <input
+              type="text"
+              class="modal__input"
+              placeholder="Your Full Name*"
+              name="name"
+              required
+            />
+            <input
+              type="tel"
+              class="modal__input phone-mask"
+              placeholder="Phone Number*"
+              name="phone"
+              minlength="17"
+              maxlength="17"
+              required
+            />
+            <input
+              type="email"
+              class="modal__input"
+              placeholder="Email*"
+              name="email"
+              required
+            />
+            <textarea
+              class="modal__message"
+              placeholder="Message"
+              name="message"
+            ></textarea>
+            <button
+              class="button modal__button"
+              type="submit"
+              name="form"
+              value="message-form-modal"
+            >
+              Send
+            </button>
+            <span class="modal__info">* Required Fields</span>
+          </form>
+        </div>
+        <!-- /.modal__contacts-form -->
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
