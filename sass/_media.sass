@@ -631,5 +631,25 @@
   .modal
     &__dialog
       padding: 10px
-    
+@media ( min-width: 992px )
+  button
+    &:hover, &:focus
+      color: $primary
+      background-color: $light
+      transition: background-color 0.3s ease, color 0.3s ease
+  a
+    &:hover, &:focus
+      color: $primary
+      transition: color 0.3s ease, color 0.3s ease
+  .search
+    &__button
+      &:hover, &:focus
+      background-color: $dark
+  .subscribe
+    &__button
+      &:hover, &:focus
+        background-color: $dark
+        color: $light
+      
+  
     
