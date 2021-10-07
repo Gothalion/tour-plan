@@ -92,6 +92,9 @@ $(document).ready(function () {
 
   // Animation
   AOS.init({
-    disable: "tablet"
+    disable: function () {
+      var maxWidth = 992;
+      return window.innerWidth < maxWidth;
+    },
   });
 });
