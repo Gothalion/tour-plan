@@ -50,8 +50,10 @@
     border: none
     font-size: 12px;
     line-height: 15px;
-    &::placeholder
-      color: $text-color
+    &::-webkit-input-placeholder
+      color: #BDBDBD
+    &::-moz-placeholder
+      color: #BDBDBD
     &::active
     outline: none
   &__button
