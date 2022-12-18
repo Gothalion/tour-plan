@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const hotelSlider = new Swiper(".hotel-slider", {
+  const hotelSlider = new Swiper('.hotel-slider', {
     // Optional parameters
     loop: true,
     allowSlideNext: true,
@@ -17,11 +17,11 @@ $(document).ready(function () {
     grabCursor: true,
     // Navigation arrows
     navigation: {
-      nextEl: ".hotel-slider__button--next",
-      prevEl: ".hotel-slider__button--prev",
+      nextEl: '.hotel-slider__button--next',
+      prevEl: '.hotel-slider__button--prev',
     },
   });
-  const reviewsSlider = new Swiper(".reviews-slider", {
+  const reviewsSlider = new Swiper('.reviews-slider', {
     // Optional parameters
     loop: true,
     allowSlideNext: true,
@@ -29,71 +29,71 @@ $(document).ready(function () {
     allowTouchMove: true,
     // Navigation arrows
     navigation: {
-      nextEl: ".reviews-slider__button--next",
-      prevEl: ".reviews-slider__button--prev",
+      nextEl: '.reviews-slider__button--next',
+      prevEl: '.reviews-slider__button--prev',
     },
   });
 
-  var menuButton = $(".menu-button");
-  menuButton.on("click", function () {
-    $(".navbar-bottom").toggleClass("navbar-bottom__visible");
+  let menuButton = $('.menu-button');
+  menuButton.on('click', function () {
+    $('.navbar-bottom').toggleClass('navbar-bottom__visible');
   });
 
-  var modalButton = $("[data-toggle=modal]");
-  var closeModalButton = $(".modal__close");
-  modalButton.on("click", openModal);
-  closeModalButton.on("click", closeModal);
-  closeModalButton.on("keyCode == 27", closeModal);
+  var modalButton = $('[data-toggle=modal]');
+  var closeModalButton = $('.modal__close');
+  modalButton.on('click', openModal);
+  closeModalButton.on('click', closeModal);
+  closeModalButton.on('keyCode == 27', closeModal);
   $(document).keydown(function (e) {
-    if (e.key == "Escape") {
+    if (e.key == 'Escape') {
       closeModal(event);
     }
   });
 
   function openModal() {
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    modalOverlay.addClass("modal__overlay--visible");
-    modalDialog.addClass("modal__dialog--visible");
-    $("body").addClass("modal-active");
+    let modalOverlay = $('.modal__overlay');
+    let modalDialog = $('.modal__dialog');
+    modalOverlay.addClass('modal__overlay--visible');
+    modalDialog.addClass('modal__dialog--visible');
+    $('body').addClass('modal-active');
   }
   function closeModal(event) {
     event.preventDefault();
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    modalOverlay.removeClass("modal__overlay--visible");
-    modalDialog.removeClass("modal__dialog--visible");
-    $("body").removeClass("modal-active");
+    let modalOverlay = $('.modal__overlay');
+    let modalDialog = $('.modal__dialog');
+    modalOverlay.removeClass('modal__overlay--visible');
+    modalDialog.removeClass('modal__dialog--visible');
+    $('body').removeClass('modal-active');
   }
   // Валидация
-  $(".form").each(function () {
+  $('.form').each(function () {
     $(this).validate({
-      errorClass: "invalid",
+      errorClass: 'invalid',
       messages: {
         name: {
-          required: "Please specify your name",
-          minlength: "Please enter at least 2 characters.",
+          required: 'Please specify your name',
+          minlength: 'Please enter at least 2 characters.',
         },
         email: {
-          required: "Please specify your email",
-          email: "Email address format: yourname@yourmail.com",
+          required: 'Please specify your email',
+          email: 'Email address format: yourname@yourmail.com',
         },
         phone: {
-          required: "Please specify your phone number",
-          phone: "Phone number format: +7-(999)-999-99-99",
-          minlength: "Please enter at least 11 characters.",
+          required: 'Please specify your phone number',
+          phone: 'Phone number format: +7-(999)-999-99-99',
+          minlength: 'Please enter at least 11 characters.',
         },
       },
     });
   });
 
   // Phone mask
-  $(".phone-mask").mask("+7(999) 999-99-99");
+  $('.phone-mask').mask('+7(999) 999-99-99');
 
   // Animation
   AOS.init({
     disable: function () {
-      var maxWidth = 992;
+      let maxWidth = 992;
       return window.innerWidth < maxWidth;
     },
   });
